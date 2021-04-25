@@ -39,7 +39,7 @@ self.addEventListener("activate", (evt) => {
 });
 
 self.addEventListener("fetch", (evt) => {
-  // cache successful GET requests to the API
+  // Cache successful GET requests to the API
   if (evt.request.url.includes("/api/") && evt.request.method === "GET") {
     evt.respondWith(
       caches
@@ -62,12 +62,11 @@ self.addEventListener("fetch", (evt) => {
         .catch((err) => console.log(err))
     );
 
-    // stop execution of the fetch event callback
+    // Stop execution of the fetch event callback
     return;
   }
 
-  // if the request is not for the API, serve static assets using
-  // "offline-first" approach.
+  // If the request is not for the API, serve static assets via "offline-first" approach.
   evt.respondWith(
     caches.match(evt.request).then((response) => {
       return response || fetch(evt.request);
