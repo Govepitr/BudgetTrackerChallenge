@@ -14,16 +14,13 @@
    <p align="center">
     <img src="https://img.shields.io/badge/Javascript-yellow" />    
     <img src="https://img.shields.io/badge/-MongoDB-green" />
-    <img src="https://img.shields.io/badge/-Mongoose-crimson" />
-    <img src="https://img.shields.io/badge/-Screencastify-red" />    
+    <img src="https://img.shields.io/badge/-Mongoose-crimson" />      
   </p>
   
   ## Description
   ❓  A budget tracker application where the user will be able to add expenses and deposits to their budget with or without a connection. 
 
-  <!-- ### Links showing the functionality: -->
-
-
+  
 
 
   ## Table of Contents
